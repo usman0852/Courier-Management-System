@@ -12,3 +12,10 @@ if (!$conn) {
     die("Database connection failed: " . mysqli_connect_error());
 }
 ?>
+<?php
+$conn = mysqli_connect("localhost", "root", "", "courier_management_system");
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+?>
